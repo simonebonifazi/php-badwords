@@ -1,5 +1,5 @@
 <?php
-
+$paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae. Inventore voluptatum adipisci in ratione, debitis quis officia a puellae. A necessitatibus illum voluptatem, vitae puellae, velit amet non, repellat ullam sint debitis quis puellae."
 
 
 ?>
@@ -12,7 +12,9 @@
     <title>My PHP first doc</title>
 </head>
 <body>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae. Inventore voluptatum adipisci in ratione, debitis quis officia a puellae. A necessitatibus illum voluptatem, vitae puellae, velit amet non, repellat ullam sint debitis quis puellae.</p>
+<p>
+    <?php echo $paragraph ?>
+</p>
     
 </body>
 </html>
