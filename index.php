@@ -1,8 +1,12 @@
 <?php
 $paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae. Inventore voluptatum adipisci in ratione, debitis quis officia a puellae. A necessitatibus illum voluptatem, vitae puellae, velit amet non, repellat ullam sint debitis quis puellae."
 
+$badword = $_GET["badword"];
 
+$censured= str_replace($badword, '***', $paragraph)
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +18,23 @@ $paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae.
 <body>
 <p>
     <?php echo $paragraph ?>
+</p>
+<p>
+    il paragrafo è lungo:
+<i>
+
+    <?php echo strlen($paragraph) ?>
+</i>
+caratteri
+</p>
+<hr>
+<p> questo è il nuovo paragrafo <?= $censured?>
+</p>
+<p>
+    
+    la sua nuova lunghezza:
+    <?php echo strlen($censured) ?>
+    
 </p>
     
 </body>
