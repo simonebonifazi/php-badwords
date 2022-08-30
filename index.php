@@ -28,7 +28,9 @@ $censured= str_replace($badword, '***', $paragraph);
 caratteri
 </p>
 <hr>
-<p> questo è il nuovo paragrafo <?= $censured?>
+<p> questo è il nuovo paragrafo :
+    <br>
+    <?= $censured ?>
 </p>
 <p>
     
