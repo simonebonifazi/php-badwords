@@ -1,9 +1,9 @@
 <?php
-$paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae. Inventore voluptatum adipisci in ratione, debitis quis officia a puellae. A necessitatibus illum voluptatem, vitae puellae, velit amet non, repellat ullam sint debitis quis puellae."
+$paragraph = "Lorem, ipsum dolor sit amet consectetur adipisicing elit  puellae. Inventore voluptatum adipisci in ratione, debitis quis officia a puellae. A necessitatibus illum voluptatem, vitae puellae, velit amet non, repellat ullam sint debitis quis puellae.";
 
-$badword = $_GET["badword"];
+$badword = $_GET['badword'];
 
-$censured= str_replace($badword, '***', $paragraph)
+$censured= str_replace($badword, '***', $paragraph);
 ?>
 
 
@@ -34,6 +34,7 @@ caratteri
     
     la sua nuova lunghezza:
     <?php echo strlen($censured) ?>
+    caratteri
     
 </p>
     
